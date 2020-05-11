@@ -1,0 +1,144 @@
+/* GLOBAL */
+
+html{
+    font-size: 100%; /* 100% = 16px*/
+    box-sizing: border-box;
+    --primary:rgb(0,62,124);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+/* ^^^^^^^^^^^GLOBAL^^^^^^^^^^^^ */
+
+/* UTILITIES */
+.tc {
+    text-align: center;
+}
+
+.btn {
+    background-color:  var(--primary);
+    color: white;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    padding: 0 3rem;
+    border-radius: 20px;
+}
+
+.btn-search {
+    background-color: var(--primary);
+    color: white;
+    font-family: 'Baloo Bhaina 2', cursive;
+    border-radius: 20px;
+    padding: 0 2rem;
+
+}
+
+.selected {
+    border: 5px solid red;
+}
+
+/* ^^^^^^^^^^^UTILITIES^^^^^^^^^^^ */
+
+/* HEADER */
+
+.header-index {
+    background-color:var(--primary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    margin: 0;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.9rem;
+    padding: 1rem;
+    margin-right: 2.2rem;
+}
+
+.main-index {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.img-main img {
+    width: 200px;
+}
+
+/* ^^^^^^^^^^^HEADER^^^^^^^^^^^ */
+
+
+/* FORM */
+
+form{
+    margin: 5rem 0 0 0;
+    padding: 2rem 2rem;
+    font-size: 1.2rem;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 17px 5px rgba(0,0,0,0.48); 
+    box-shadow: 0px 3px 17px 5px rgba(0,0,0,0.48);
+}
+
+form label {
+    font-weight: 800;
+}
+
+input[type=text] {
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    height: auto;
+}
+
+select {
+    width: 35%;
+    /* padding: 6px 10px; */
+    border: none;
+    border-radius: 7px;
+    background-color: #f1f1f1;
+}
+
+#form {
+    display: grid;
+    grid-template-areas: 'p-name p-age' 'p-gender p-breed' 'p-service p-owner' 'p-phone p-phone';
+
+    
+}
+
+/* ^^^^^^^^^^^FORMS^^^^^^^^^^^ */
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+}
+
